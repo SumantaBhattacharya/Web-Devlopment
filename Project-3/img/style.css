@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url('path/to/gilroy.woff') format('woff');
+    /* Add additional formats if necessary */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy', sans-serif; /* Fallback to a generic sans-serif font */
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color: #e4e9ef; */
+}
+.nav{
+    /* height: 100px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 45px 65px;
+}
+.nav .nav-part1{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.nav .nav-part2{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.nav h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.content{
+    margin-top: 60px;
+    padding: 40px 65px;
+}
+.content h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+.content h1{
+    margin-top: 30px;
+    font-size: 112px;
+    line-height: 100px;
+    font-weight: 500;
+    letter-spacing: -4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    word-spacing: 5px;
+}
+.case{
+    padding: 40px 65px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.case h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.case h5{
+    font-size: 20px;
+    font-weight: 500;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.line{
+    height: 2px;
+    width: 160px;
+    background-color: black;
+}
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 65px;
+    gap: 80px;
+}
+.elem{
+    width: 50%;
+}
+.elem-img{
+    height: 650px;
+    background-color: rgb(211, 227, 227);
+    width: 100%;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    /* padding: 70px; */
+}
+/*https://imagecolorpicker.com/*/
+#img1{
+    background-image: url(https://i.pinimg.com/564x/e4/b8/24/e4b824a9484c5eb27116b4e0ce594592.jpg);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#img2{
+    background-image: url(https://i.pinimg.com/564x/b2/5f/98/b25f9845ee3d0ac137b453927b791821.jpg);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;/*top,bottom,left,right*/
+}
+.bottom i{
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.bottom i:hover{
+    background-color: black;
+    color: #ffffff;
+}
+.bottom h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.bottom h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
