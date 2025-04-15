@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cement Corporation Of India Limited</title>
+    <!-- <link rel="icon" href=""> -->
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Helvetica, sans-serif;
+            background-color: #b7e6eb;
+            /* Fallback background color */
+            background-image: url('chainsaw-man-6zhr96v1eo9fidla.jpg');
+            /* Replace 'chainsaw-man-6zhr96v1eo9fidla.jpg' with the actual path to your image */
+            background-size: cover;
+            /* This property ensures that the background image covers the entire viewport */
+            background-repeat: no-repeat;
+            /* This property prevents the background image from repeating */
+            background-position: center;
+            /* This property centers the background image */
+            /* You can adjust these properties based on your design preferences */
+        }
+
+
+        header,
+        footer {
+            background-color: #5b8489;
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+
+        }
+
+        form input[type="submit"] {
+            background-color: green;
+            color: rgb(255, 255, 255);
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form input[type="reset"] {
+            background-color: green;
+            color: rgb(255, 255, 255);
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .navitem {
+            display: inline;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 20px;
+            height: 50px;
+            /* Add this line to set border */
+        }
+
+        .navitem a {
+            text-decoration: none;
+            color: aliceblue;
+            border: 2px solid white;
+            /* Adjust the border size */
+            border-radius: 10px;
+            /* Adjust the border-radius for rounded corners */
+            padding: 20px;
+            /*20 pixeld from each top right bottom left 20px 20px 20px 20px*/
+            display: inline-block;
+            /* Ensures the border shape applies correctly */
+        }
+
+        .regestration {
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            max-width: 60%;
+            height: auto;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .directory {
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 1px solid #395c60;
+            padding: 4px;
+        }
+
+        .contact {
+            text-align: center;
+            /*start or right,end or left*/
+        }
+
+        div {
+            width: auto;
+            height: auto;
+            background-color: aliceblue;
+        }
+
+        #employee-regestration {
+            text-align: left;
+            height: 500px;
+            width: 300px;
+            margin-left: 10%;
+            /* Adjust the percentage as needed */
+            margin-right: auto;
+        }
+
+        #employee-directory table {
+            width: 80%;
+            /* Adjust the width as needed */
+            margin: auto;
+        }
+
+        #employee-directory caption {
+            font-size: 18px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            /* Adjust font size as needed */
+        }
+
+        #employee-directory th,
+        #employee-directory td {
+            border: 1px solid #395c60;
+            padding: 4px;
+        }
+    </style>
+    <!-- text-align: center; this linetakes a fisex section and move the lines but width: max-content; margin-left: auto;margin-right: auto; this will move the whole section in the middle of the code-->
+</head>
+
+<body>
+    <header>
+        <h1 id="heading_1">Welcome to Cement Corporation Of India Limited</h1>
+        <nav>
+            <ul>
+                <li class="navitem"><a href="#employee-regestration">Employee-Regestration</a></li>
+                <li class="navitem"><a href="#employee-directory">Employee-Directory</a></li>
+                <li class="navitem"><a href="#contact-us">Contact-Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="text-align: center; height: auto; width: auto; text-align: left; margin-left: 10%;  ">
+        <!-- top,right,bottom,left clockwise-->
+        <img src="WhatsApp Image 2023-12-27 at 20.04.14_a2417da0.jpg"
+            style="width: 60%; height: 65%; border-width: 2px;border-style: solid; border-color: black;"
+            alt="Centered Image">
+    </div>
+    <section id="employee-regestration" class="regestration">
+        <h2><u>Employee-Regestration</u></h2>
+        <p>Fill the below form to regester as <em>employee.</em></p>
+        <form action="https://www.youtube.com/results">
+            <label for="Name">Name:</label><!-- Nmae of the form control.submitted as form as part of the name value pair-->
+            <input type="text" placeholder="Enter your name" id="Name" name="username"><br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your email id" id="email">
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter your password" id="password"><br>
+            <label for="age">Enter your age:</label>
+            <input type="number" placeholder="Enter age" id="age"><br>
+
+
+            <label>Select Gender:</label>
+            <input type="radio" value="male" id="male" name="gender">
+            <label for="male">Male</label><!-- for="" facilitates if you chick even on the text it checks it -->
+            <input type="radio" value="Female" id="female"
+                name="gender"><!-- radio is for choosing 1 option out of multiple options -->
+            <label for="female">Female</label><br>
+
+            <label>Select role:</label>
+            <select>
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="Ux Designer">Ux Designer</option>
+                <option value="Product Manager">Product Manager</option>
+                <option value="Hr representative">Hr representative</option>
+            </select><br>
+            <label for="joiningdate">Enter Joining-Date:</label>
+            <input type="date" placeholder="Enter joining-date" id="joiningdate"><br>
+
+            <textarea placeholder="Explain your interest" rows="5" cols="50" name="interest" id="101"></textarea><br>
+
+            <label for="file">select your file</label>
+            <input type="file" value="file" id="file"><br>
+
+            <label for="sel">select your role in the job</label>
+            <select id="sel">
+                <option value="opt">select your option</option>
+                <option value="eng" selected>Engineer</option>
+                <option value="dev">developer</option>
+
+            </select><br>
+
+            <label for="vol">selct your volume level</label>
+            <input type="range" id="vol" min="0" max="100" name="vol" step="2" value="0">
+
+            <input type="checkbox" placeholder="terms" id="terms">
+            <label for="terms">I agree on the terms and conditions</label><br>
+
+            <label>Time for interview</label>
+            <input type="time" placeholder="Enter time" id="time"><br>
+            <label>Enter your favourite color</label>
+            <input type="color"><br
+            <label>Search about us</label>
+            <input type="text" placeholder="search in toutube" name="search_query" id="search"> <br>
+            <button>search</button>
+            <input type="submit">
+            <input type="reset">
+            <button>Hover me </button>
+        </form>
+    </section>
+    <section id="employee-directory" class="directory">
+        <table>
+            <caption>Employee-Data</caption>
+            <thead border="">
+                <tr>
+                    <th>Employee NAME</th>
+                    <th colspan="2">Employee ID</th>
+                    <th>Employee roles</th>
+                    <th>Employee GENDER</th>
+                    <th colspan="2">Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MAHESH BHAT</td>
+                    <td>168</td>
+                    <td>769</td>
+                    <td>Software Engineer</td>
+                    <td>MALE</td>
+                    <td>5000rs</td>
+                    <td>50$</td>
+                    
+                </tr>
+                <tr>
+                    <td>ANIRBAN DUTTA</td>
+                    <td>180</td>
+                    <td>781</td>
+                    <td>Product Manager</td>
+                    <td>MALE</td>
+                    <td>5000</td>
+                    <td>50$</td>
+                </tr>
+                <tr>
+                    <td>MONILI GHOSH</td>
+                    <td>120</td>
+                    <td>121</td>
+                    <td>Ux Designer</td>
+                    <td>FEMALE</td>
+                    <td>5000</td>
+                    <td>50$</td>
+                </tr>
+                <tr>
+                    <td>Rohit Sharma</td>
+                    <td>177</td>
+                    <td>178</td>
+                    <td>Hr representative</td>
+                    <td>MALE</td>
+                    <td>5000</td>
+                    <td>50$</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact-us" class="contact">
+        <h2 style="text-decoration: white wavy underline; font-weight: lighter; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 28px; line-height: 0px;"
+            id="Con-tact">Contact-Us</h2><!--100-900 normal_font-size=16pixels-->
+        <p>You can Contact-Us at sumanta2004@gmail.com or 9910442077</p>
+        <p>Office timings:9AM - 6PM</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.3657867718025!2d93.7584299474061!3d26.02158510907958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374675149915357d%3A0x7e178a0bc16dcf73!2sCement%20Corporation%20of%20India!5e0!3m2!1sen!2sin!4v1703682982749!5m2!1sen!2sin"
+            width="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <footer>
+        <h3 style="line-height: normal;">Cement Corporation Of India Limited &copy; 2011 - 2023 -Terms and
+            ConditionPrivacy PolicyCopyright PolicyHyperlink PoliciesDisclaimerAccessibility StatementHelpSitemape-books
+            and ATRsWeb Information Manager
+            Copyright © 2023 Ministry of Heavy Industries, Government of India. All rights reserved.
+            Last Upated : 01/12/2023
+            Total Visitors: 1812664
+        </h3>
+    </footer>
+
+</body>
+
+</html>
+<!--100-900 normal_font-size=16pixels-
+ #navbar {
+    height: 4rem;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem; /* Added padding for better spacing 
+} 
+
+ button {
+    background-color: #f08804;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+} #logo {
+    color: #f08804;
+    font-size: 1.5rem; 16 is the default size of any text in html * 1.5  
+    margin-left: 1rem; Adjusted margin 
+    text-decoration: none;
+} 
+
+ a {
+    margin-left: 1rem; /* Adjusted margin 
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.search-container {
+    position: static;/* by default every element has a static position 
+    display: flex;
+    align-items: center;
+}
+
+input {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 0.25rem;
+} 
+
+
+ footer {
+    
+    background-color: #0f1111;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    height: 6vh;
+   /*margin-top: auto;   Push the footer to the bottom 
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+} 
+
+#contentB{
+    
+     position: relative;
+    top: 10px;
+    right: 900px;
+    z-index: 1; 
+}
+#contentBo{
+    background-image: url("chainsaw-man-6zhr96v1eo9fidla.jpg");
+    background-size: cover;
+    position: absolute;
+    right: 1000px;
+    top: 80px;
+     z-index: 4;z-index doesnt work on static postion that is by default  
+}
+#contentBoxes{
+    
+        position: fixed;
+         right: 10px;  Adjusted right property  
+         top: 10px;   Adjusted top property  
+}
+#contentsBoxes{
+    position: sticky;
+    top: 0px;
+    
+} 
+body {
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 50px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#container {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+}
+
+#Box_1 {
+    background-color: aqua;
+}
+
+#Box_2 {
+    background-color: pink;
+    height: 200px;
+    /* flex-shrink: 1; */
+    flex-grow: 2;
+}
+
+#Box_3 {
+    background-color: rgba(167, 14, 14, 0.822);
+}
+
+#Box_4 {
+    background-color: rgb(123, 0, 255);
+    flex-grow: 1;
+
+}
+     <header>
+        <div id="navbar">
+            <a href="#" id="logo">amazon.in</a>
+            <a href="#">Account</a>
+            <a href="#">My Cart</a>
+            <a href="#">Contact Us</a>
+            <div class="search-container">
+                <input type="text" placeholder="Search amazon.in">
+                <button>Search</button>
+            </div>
+        </div>
+    </header> 
+    <h1>Flexbox Playground</h1>
+    <div id="container">
+        <div id="Box_1" >Box_1</div>
+        <div id="Box_2" >Box_2</div>
+        <div id="Box_3" >Box_3</div>
+        <div id="Box_4" >Box_4</div>
+    </div>
+    <footer>
+        <h3>Amazon; 2011 - 2023 &copy; Ministry of Heavy Industries, Government of India. All rights reserved. Last
+            Updated: 01/12/2023. Total Visitors: 1812664</h3>
+    </footer> 
+
+    <th>used to display table row
+        <td> used to display table data
+            <th> used to display table header
+<thead><thead/>
+    to wrap table header
+    <tbody><tbody/>
+    to wrap table body
+    <tfoot><tfoot/>
+    to wrap table footer
+-->

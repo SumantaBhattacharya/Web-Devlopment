@@ -1,0 +1,18 @@
+p{
+    color: brown;
+
+}
+button{
+    color: yellowgreen;
+    background-color: pink;
+}
+button:hover{
+    background-color: green;
+    color: #000;
+    border: 2px solid red;
+}
+#heading_1{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase; /*capitalize or lowercase by default it is none*/
+}
