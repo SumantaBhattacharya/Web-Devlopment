@@ -1,0 +1,269 @@
+@import url("https://fonts.gooleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900;&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background-image: url("img/back.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    margin: 0;
+    
+}
+
+.glass {
+    /* Add styling for the .glass class if needed */
+    width: 930px;
+    height: 520px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+    /*The CSS property box-shadow is used to add a shadow effect to an element. The values you provided (0 0 8px) represent the horizontal offset, vertical offset, and blur radius of the shadow, respectively. */
+    background-image: url("img/front.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    padding: 30px 8%;
+    /*30px-top bottom and 8px left right*/
+    /* justify-content: space-between; */
+}
+
+.logo {
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    /*0px-top bottom and 20px left right*/
+    /* transition: 0.1s ease-out; */
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.1s ease-out;
+    /* Added the transition property for a smooth effect */
+}
+
+nav ul li a {
+    /*this is the right way you cannot put these lines uder nav ul li*/
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -7px;
+    transition: 0.1s ease;
+}
+
+img:hover {
+    border: 2px solid #fff;
+
+}
+
+h3 {
+    color: #fff;
+    margin: 80px 110px -25px;
+    /*top bottom left_and_right*/
+    font-style: italic;
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: white;
+    margin: 0 110px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150px;
+    letter-spacing: 10px;
+    opacity: 0.6;
+
+    background-image: linear-gradient(45deg, #000, #fff, #000, #fff, #000);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.icons i {
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+    margin-top: 80px;
+    margin-right: 50px;
+}
+
+.icons ul {
+    flex: 1;
+    text-align: right;
+    /* list-style: none; */
+}
+
+.icons ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+}
+
+.icons ul li i {
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+
+.icons ul li i:hover {
+    color: aqua;
+}
+.wrapper {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("img/front.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px ;
+    /* background: transparent; */
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    font-weight: 900;
+    opacity: 1;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0; /* Adjusted the top margin */
+}
+
+.input-box {
+    width: 100%;
+    height: 40%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 10px 20px; /* Adjusted padding for top and bottom */
+    font-size: 16px;
+    padding: 10px 20px; /* or padding: 20px 45px 20px 20px; */
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+}
+.input-box input::placeholder {
+    color: #fff;
+
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding: 10px 20px; /* Adjusted padding for top and bottom */
+}
+.wrapper .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;/*margin: [top] [right] [bottom] [left];Top margin: -15px
+    Right margin: 0
+    Bottom margin: 15px
+    Left margin: 0
+    */
+}
+.remember-forget label input{/*remember me*/
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forget a{/*forget password*/
+    text-decoration: none;
+    color: #fff;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+
+}
+.wrapper .btn{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.wrapper .regester-link{
+    font-size: 14.5px;
+    text-align: center;
+    /* margin-top: 20px; */
+    margin: 20px 0 15px;
+}
+.regester-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.regester-link p a:hover{
+    text-decoration: underline;
+}
+
+/* The CSS property box-sizing: border-box; is a styling rule that affects how the browser calculates the total width and height of an element. 
+When you set box-sizing to border-box, the width and height of the element include the padding and border, but not the margin. This means that if you set the width of an element to, for example, 200 pixels, that 200 pixels will include any padding and border you apply to it. 
+https://fontawesome.com/v5/docs/web/use-with/wordpress/install-manually#setup-webfont-with-cdn
+The cursor: pointer; CSS property is used to change the mouse cursor when it hovers over an element, indicating that the element can be interacted with or clicked. When applied to an element, it changes the default arrow cursor to a hand or pointing finger cursor, conveying to users that the element is clickable.*/
