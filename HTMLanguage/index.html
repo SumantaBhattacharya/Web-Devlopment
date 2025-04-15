@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- this will make changes in only h1 -->
+    <style>
+        h1 {
+            font-size: 24px;
+            background-color: rgb(218, 1, 1);
+            color: white;
+            padding: 10px;
+        }
+
+        div {
+            color: chocolate;
+        }
+
+        /* class selecter */
+        .line1 {
+            background-color: #ff00cc;
+        }
+
+        #sui {
+            background-color: #522b4a;
+        }
+
+        /*  attribute selecter */
+        input[type="text"] {
+            padding: 10px;
+            background-color: aquamarine;
+            border-width: 2px;
+            border-style: dashed;
+            border-color: pink;
+        }
+
+        /*pseudo-selector */
+        button:hover {
+            background-color: #dce96a;
+            padding: 100px 10px 25px 200px;
+            /* top,right,bottom,left*/
+            border: 2px solid red;
+        }
+
+        /* list selector */
+        p {
+            background-color: rgb(160, 255, 8);
+        }
+
+        .Style {
+            color: #632957;
+            background-color: #dce96a;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            padding-right: 100px;
+            padding-left: 100px;
+            border: 5px solid rgb(0, 0, 0);
+            /*width,*/
+            text-decoration: line-through;
+            /*or none*/
+            text-align: initial;
+        }
+
+        .txt {
+            text-decoration: underline;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            font-weight: 900;
+            /*boldness range 100-900 or  bold*/
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+        /* flex box */
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- This is an HTML Comment -->
+    <h1>WORLD🖤</h1>
+    <h2>WORLD </h2>
+    <h3>WORLD</h3>
+    <h4>WORLD</h4>
+    <h5>WORLD</h5>
+    <h6>WORLD</h6>
+    <h1 style="font-size:24px;color:green;">WORLD🖤</h1>
+    <h2 style="background-color: chocolate;color: aliceblue; text-align:center ; display: none;">Benefits of cute dog pics</h2>
+    <hr>
+    <header>
+        <h3>My portfolio</h3>
+    </header>
+    <hr>
+    <main>
+        <section>
+            Education: College(MAKAUT) | School(KVs)
+        </section>
+        <section>
+            Experience's : Intern as a fresher at IT based company called TCS|Computer Teacher at KV Bokajan
+        </section>
+        <article>My Story:My name is Sumanta Bhattacharya done my schooling from Kendriya Vidhyalaya, done my Graduation
+            from West Bengal University of Technology I am graduated in Bacholars of Computer Application currently
+            persuiling Mca(Masters of Computer Application) at NIT Durgapur</article>
+
+        <aside style="visibility: hidden;">This is an add</aside>
+
+        <div>
+            <h3>I can be very selfish from the moment I start loving you</h3>
+        </div>
+        <span>I like the winter season because I don't have to switch on the fan; it's very noisy.</span>
+    </main>
+
+    <footer>
+        <h6>Cement Corporation Of India Limited &copy; 2011 - 2023 -Terms and ConditionPrivacy PolicyCopyright
+            PolicyHyperlink PoliciesDisclaimerAccessibility StatementHelpSitemape-books and ATRsWeb Information Manager
+            Copyright © 2023 Ministry of Heavy Industries, Government of India. All rights reserved.
+            Last Upated : 01/12/2023
+            Total Visitors: 1812664
+        </h6>
+    </footer>
+
+    <p style="background-color: #7300ff; color: #ff00cc; margin: 100px; padding: 100px;"><b> My </b> <strong> favroute
+        </strong> subject's <i> chemestry </i> formula <small> is</small><u> the </u> H<sub>2</sub>0 and A<sup>n</sup>+B
+        and yes it <del>is</del> was <em>taught</em> by my <big> School </big> <mark>Teacher</mark> by said that <q>it
+            is a formula of </q>
+    <blockquote>water</blockquote>
+    </p>
+
+    <hr>
+
+    <b> Bold </b><br />
+    <i> Italic </i><br />
+    <u> Underline </u><br />
+    <strong>Strong</strong><br />
+    <em>emphasised</em>
+    <mark>highlighted</mark>
+    <del>Blue</del>
+    <p>He said, <q>What is life anyway?</q> </p>
+    <br />
+
+    Subscript & Superscript Tag
+    <p class="Style">H<sub>2</sub>0</p>
+    <p id="sui">A<sup>n</sup>+B</p>
+
+    <big> Big </big>
+    <hr> <!-- Used to display a horizontal ruler, used to separate content -->
+    <small> Small </small>
+
+    <hr>
+    <p class="line1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio aliquam rerum iusto,
+        cupiditate odit sint nulla! Nemo ipsa laboriosam nisi assumenda aliquam magni ratione nobis, enim commodi facere
+        aspernatur.</p>
+
+    <pre>Lorem                         ipsum dolor sit amet consectetur adipisicing elit. Inventore optio aliquam rerum iusto, cupiditate odit sint nulla! Nemo ipsa laboriosam nisi assumenda aliquam magni ratione nobis, enim commodi facere aspernatur.</pre>
+
+    <p style="color:rgb(255,0,0); font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter;">The text
+        is red using hexadecimal color.</p>
+    <p style="color:rgb(0,255,0); font-size: xx-large;">The text is GREEN using hexadecimal color.</p>
+    <p style="color:rgb(0,0,255);">The text is BLUE using hexadecimal color.</p>
+
+    <p style="color:#26ff0062;">The text is red using hexadecimal color.</p>
+    <p style="color:#7300ff;">The text is GREEN using hexadecimal color.</p>
+    <p style="color:#ff00cc;">The text is BLUE using hexadecimal color.</p>
+
+    <p style="color:hsl(80, 100%, 50%);">The text is red using hexadecimal color.</p>
+    <p style="color:hsl(180, 100%, 50%);">The text is GREEN using hexadecimal color.</p>
+    <p style="color:hsl(290, 100%, 50%);">The text is BLUE using hexadecimal color.</p>
+
+    <p class="txt">ampercand,greater than,lesser than,Delta,Right arrow,check mark symbol: &amp; &gt; &lt; or &#38;
+        &#916; &#8594; &#8730;</p>
+    <p>Degree symbol:30&deg;</p>
+    <p>Copy right symbol:&copy;</p>
+    <p>Smiley emoji:&#x1F60A;</p>
+
+    <hr>
+
+
+    <a
+        href="https://en.wikipedia.org/wiki/Hinduism#:~:text=Hinduism%20%2F%CB%88h%C9%AAn,global%20population%2C%20known%20as%20Hindus.">Wikipedia</a><!-- ABSOLUTE link-DIFFERENT FOLDER no new tab-->
+
+    <a href="https://en.wikipedia.org/wiki/Cement_Corporation_of_India"><img
+            src="https://en.wikipedia.org/static/images/icons/wikipedia.png" alt="Wikipedia" height="100"></a><br>
+
+    <a href="https://pwskills.com" target="_blank">pwskills</a><!--new tab-->
+    <br />
+    <a href="/hello.html">HELLO</a><!-- relative link-SAME FOLDER --><br />
+    <a href="/HTMLanguage/HTML">INTRODUCTION</a><!-- relative link-DIFFERENT FOLDER --><br />
+
+    <hr>
+
+    <img src="data:image/jpeg;base64,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"
+        height="180" alt="Nothing" title="this is a sample image" />
+
+    <img src="/chainsaw-man-6zhr96v1eo9fidla.jpg" height="100" width="100">
+    <hr>
+
+    <video width="560" height="315" controls autoplay loop src="/ca3c360e2d8fbb6ad38465d817eebf46.mp4">my video</video>
+
+    <hr>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.799434346809!2d88.5405553751625!3d22.957612479219325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8bf5871a9e0d7%3A0x3cbdf3b9f157e355!2sMaulana%20Abul%20Kalam%20Azad%20University%20of%20Technology!5e0!3m2!1sen!2sin!4v1703510307094!5m2!1sen!2sin"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=5i2yToO1UzufWN-h"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen> </iframe><br>
+    <iframe width="560" height="315" src="https://en.wikipedia.org/wiki/India"></iframe>
+
+    <hr>
+
+    <table border=""><!-- width-style-color or style="border: 1px solid black;" -->
+        <caption>Student-Data</caption>
+        <thead>
+            <tr>
+                <th>Student NAME</th>
+                <th colspan="2">Student ID</th>
+                <th>Student GENDER</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MAHESH BHAT</td>
+                <td>168</td>
+                <td>769</td>
+                <td>MALE</td>
+            </tr>
+            <tr>
+                <td>ANIRBAN DUTTA</td>
+                <td>180</td>
+                <td>781</td>
+                <td>MALE</td>
+            </tr>
+            <tr>
+                <td>MONILI GHOSH</td>
+                <td>120</td>
+                <td>121</td>
+                <td>FEMALE</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>ordered lists</h3>
+    <ol>
+        <li>Apple</li>
+        <ol>
+            <li>color: red</li>
+            <li>season: winter</li>
+        </ol>
+        <li>banana</li>
+        <li>Grapes</li>
+
+    </ol>
+    <h3>Unordered lists</h3>
+    <ul>
+        <li>Apple</li>
+        <ul>
+            <li>color: red</li>
+            <li>season: winter</li>
+        </ul>
+        <li>banana</li>
+        <li>Grapes</li><!-- list item -->
+    </ul>
+
+    <h3>defination lists</h3>
+    <dl>
+        <dt>Term1</dt>
+        <dd>definition of Term1</dd>
+        <dt>Term2</dt>
+        <dd>definition of Term2</dd>
+        <dt>Term3</dt>
+        <dd>definition of Term3</dd>
+    </dl>
+
+    <hr>
+
+    <h4> Regestration form</h4>
+    <form action="/action.php">
+        <label for="FirstName">First Name:</label>
+        <input type="text" placeholder="Enter name" id="FirstName"><br>
+        <label>last Name:</label>
+        <input type="text" placeholder="Enter last name" disabled><br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your email address" id="email" required><br>
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password"><br>
+
+        <label for="DOB">Enter DOB:</label>
+        <input type="date" placeholder="Enter DOB" id="DOB"><br>
+
+        <label for="age">Enter your age:</label>
+        <input type="number" placeholder="Enter age" id="age"><br>
+
+
+        <label>Select Gender:</label>
+        <input type="radio" value="male" id="male" name="gender">
+        <label for="male">Male</label><!-- for="" facilitates if you chick even on the text it checks it -->
+        <input type="radio" value="Female" id="female"
+            name="gender"><!-- radio is for choosing 1 option out of multiple options -->
+        <label for="female">Female</label><br>
+
+        <label>Country</label>
+        <select>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <option value="Japan">Japan</option>
+            <option>China</option>
+            <option>Brazil</option>
+            <option>Bhutan</option>
+        </select><br>
+
+        <textarea placeholder="Explain your interest" rows="5" cols="50" name="interest" id="101"></textarea><br>
+
+        <label for="file">select tour file</label>
+        <input type="file" value="file" id="file"><br>
+
+        <input type="checkbox" placeholder="terms" id="terms">
+        <label for="terms">I agree on the terms and conditions</label><br>
+
+
+        <input type="submit"><br>
+        <input type="reset"><br>
+    </form>
+    <button onclick="console.log('button was clicked')">Hover me</button>
+
+
+
+
+</body>
+
+</html>
+<!-- APNA COLLEGE
+    FROALA- A frola is an online text editor To 100 percent free. You can just go to the website. I must say, download . and change this app  style and formatting images and media html code. save preview 3rd party integrations font.  HTML code or better banana and edit HTML of normal scope text to simply website basic form. basic form- download the you can use it completely. Freely on your system.
+ultra edit - for professional devlopers paid software
+HTML(Hypertext Markup Language) - STRUCTURE/ LAYOUT 
+HTML is the code that is used to structure a web page and its content.
+The component used to design the structure of website are called html tags
+First HTML File 
+index.html
+it is the default name for a website's homepage
+CSS(Cascading Style Sheets) - STYLE
+JS(Javascript) - LOGIC/DEFINES THE FUNCTIONALITY
+.htm
+By default index page becomes the home page.
+!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+boiler plate code
+HTML Tag
+A container for some content or other HTML tags
+<p> This is a paragraph</p>
+Element
+
+Basic HTML Page
+<!DOCTYPE html>                                     tells browser you are using HTML5
+<html>                                            root of an html document
+ <head>                                             container for metadata
+ <title>My First Page</title>                     page title
+ </head>
+ <body>                                          contains all data rendered by the browser
+ <p>hello world</p> paragraph ta
+ </body> 
+</html>
+
+version HTML5
+Opening and closing
+<!DOCTYPE html>
+</html>
+head tag-constains the detains which we dont want to store in the web page-meta information
+<head>
+</head> 
+body tag-constains the detains which we want to store/display in the web page 
+<body>
+</body>
+this line of code isto define the responsiveness of the website
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Quick Points
+Html tag is parent of head & body tag
+Most of html elements have opening & closing tags
+with content in between
+Some tags have no content in between, eg - <br>
+We can use inspect element/view page source to edit html
+
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
+file:///C:/Users/Sumanta%20Bhattacharya/AppData/Local/Microsoft/Windows/INetCache/IE/UWIJPQX1/Class_Notes[1].pdf
+
+view-source:http://127.0.0.1:5500/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_First_Page</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+    <p>This is a paragraph</p>
+    <br>
+ Code injected by live-server
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+
+Comments in HTML- control+right slash
+ This is an HTML Comment 
+This is part of code that should not be parsed
+HTML is NOT case sensitive
+<p> = <P>
+<html> = <HTML>
+<head> = <HEAD>
+<body> = <BODY
+
+Basic HTML Tags
+Attributes are used to add more information to the tag
+HTML Attributes
+<html lang="en">
+<html lang='en'>
+
+Heading Tag
+Used to display headings in HTML
+h1 (most important)
+h3
+h2
+h4
+h5
+h6 (least important)
+
+Paragraph Tag
+Used to add paragraphs in HTML
+<p> This is a sample paragraph </p>
+
+Anchor Tag
+Used to add links to your page
+<a href="https://google.com"> Google </a>
+
+
+
+     CSS
+ Cascading Style Sheet
+ It is a language that is used to describe the style of a document
+Basic Syntax
+ Selector
+ h1 {
+ color:  red;
+ }
+ Property
+ Value 
+Including Style
+ Inline
+ <h1 style="color: red">
+ <style> tag
+ <style>
+ h1 {
+ color : red;
+ }
+ </style>
+Including Style
+ External Stylesheet
+ Writing CSS in a separate document & linking it with HTML file
+Color Property
+ Used to set the color of foreground-text,button,link
+ color:  red; 
+ color:  pink;
+ color:  blue;
+ color:  green;
+ Background Color Property
+ Used to set the color of background
+ background-color:  red;
+ background-color:  pink;
+ background- color:  blue;
+ background- color:  gree;
+Color Systems
+ RGB
+ color:  rgb(255, 0, 0);
+ color:  rgb(0, 255, 0);
+  color:  rgb(0, 0, 255);
+Color Systems
+ Hex (Hexadecimal)
+ color : #ff0000;
+ color : # 00ff00;
+ color : # 0000ff;
+Selectors
+ Universal Selector
+ * { }
+ Element Selector
+ h1 { }
+ Id Selector
+ #myId { }
+ Class Selector
+ .myClass { }
+ Text Properties
+ text-align
+ text-align : left / right / center
+ Text Properties
+ text-decoration
+ text-decoration : underline / overline / line-through
+ Text Properties
+ font-weight
+ font-weight : normal / bold / bolder / lighter
+ font-weight : 100-90
+ Text Properties
+ font-family
+ font-family : arial 
+font-family : arial, roboto
+Units in CSS
+ Absolute
+ pixels (px)
+ 96px = 1 inch
+ font-size: 2px;
+ Text Properties
+ line-height
+ line-height : 2px
+ line-height : 3
+ line-height : normal
+ Text Properties
+ text-transform
+ text-tranform : uppercase / lowercase / capitalize / none
+ Box Model in CSS
+ Height 
+ Width 
+ Border
+ Padding
+ Margin
+
+ Height
+ By default, it sets the content area h eight of the element
+ div {
+    50px
+ }
+ Width
+ By default, it sets the content area  width of the element
+ div {
+    50px
+ }
+ Border
+ Used to set an element's border
+ border-width : 2px;
+ border-style : solid / dotted / dashed
+ border-color : black;
+ Border
+ Shorthand
+ border : 2px solid black;
+ Border
+ Used to round the corners of an element's outer border edge
+ border-radius : 10px;
+ border-radius : 50%;
+ Padding
+ padding-left
+ padding-right
+ padding-top
+ padding-bottom
+ Padding
+ Shorthand
+ padding: 50px;
+ padding: 1px 2px 3px 4px;
+ top | right | bottom | left -> clockwise
+ Margin
+ margin-right
+ margin-left
+ margin-top
+ margin-bottom
+ Margin
+ Shorthand
+ margin: 50px;
+ margin: 1px 2px 3px 4px;
+ top | right | bottom | left -> clockwise
+ Display Property
+ display: inline / block / inline-block / none
+ inline - Takes only the space required by the element. (no margin/ padding)
+ block - Takes full space available in width.
+ inline-block - Similar to inline but we can set margin & padding.
+ none - To remove element from document flow
+ Visibility
+ visibility: hidden;
+ Note : When visibility is set to none, space for the element is reserved.
+ But for display set to none, no space is reserved or blocked for the
+ element.
+Alpha Channel
+ opacity (0 to 1)
+ RGBA
+ color:  rgba(255, 0, 0, 0.5);
+ color:  rgba(255, 0, 0, 1);
+ Units in CSS
+ Relative
+ %
+ em
+ rem
+ Percentage (%)
+ It is often used to define a size as relative to an element's parent object.
+ width : 33% ;
+ margin-left : 50% ;
+ Em
+ Font size of the parent, in case of the typeographical properties like font-size, and font size of the element itself, in case of other properties like width.
+ Rem (Root Em)
+ font size of the root element
+ Others
+ vh: relative to 1% viewport height 
+vw : relative to 1% viewport width
+Position
+ The position CSS property sets how an element is positioned in a document.
+ position : static / relative / absolute / fixed
+ Position
+ static - default position (The top, right, bottom, left, and z-index properties have no effect)
+ relative - element is relative to itself. (The top, right, bottom, left, and z-index will work)
+ absolute - positioned relative to its clo sest positioned ancestor. (removed from the flow)
+ fixed - positioned relative to browser. (removed from flow)
+ sti cky - positioned based on use r's scroll position
+ z-index
+ It decides the stack level of elements
+ Overlapping elements with a larger z-index cover those with a smaller one.
+ z-index : auto (0)
+ z-index : 1 / 2 / ...
+ z-index : -1 / -2 / ...
+ Background Image
+ Used to set an image as background
+ background-image : url("image.jpeg");
+ Background Size
+ background-size : cover / contain / auto
+ Flexbox
+ Flexible Box Layout
+ It is a one-dimensional layout method for arranging items in rows or columns.
+ The Flex Model
+ flex container
+ main axis
+ flex item
+ cross axis
+ Flexbox Direction
+ It sets ho w flex items are placed in the flex container, along which axis and direction.
+ display: flex;
+ flex-direction : row; (default)
+ flex-direction : row-reverse;
+ flex-direction : column;
+ flex-direction : column-reverse
+ Flex Properties
+ for Flex Container
+ justify-content : alignment along the main axis. 
+ flex-start / flex-end / centre / space-evenly / 
+ flex-wrap : nowrap / wrap / wrap-reverse
+ align-items : alignment along the cross axis.
+ align-content : alignment of space between & around the content along cross-axis
+Flex Properties
+ for Flex Item
+ align-self : alignment of individual along the cross axis. 
+ flex-grow : how much a flex item will grow relative to the rest of the flex items if
+ space is available
+ flex-shrink  :  how much a flex item will shrink relative to the rest of the flex items if
+ space is available
+ Media Queries
+ Help create a responsive website
+ in today's world everyone has a different device with thousand of
+ different screen sizes
+ if you built a website people will use it on laptop, big screen
+ computers, an iphone, a big screen android phone or a small screen
+ one, an ipad 
+even orientation is different like landscape or portrait
+ so it's important that layout looks good on all
+ so we need design to be responsive, respond to different screen sizes
+ & orientation
+ @media (width : 600px) {
+       div {
+              background-color : red;
+      }
+   }
+ @media (min-width : 600px) {
+       div {
+              background-color : red;
+      }
+   Media Queries
+ @media (min-width : 200px) and (max-width : 300px) {
+ div {
+ background-color : red;
+ }
+ }
+ Transitions
+ Transitions enable you to define the transition between two states of an element. 
+transition-property : property you want to transition (font-size, width,all etc.)
+ transition-duration : 2s / 4ms ..
+ transition-timing-function : ease-in / ease-out / linear / steps ..
+ transition-delay : 2s / 4ms ..
+ Transition Shorthand
+ property name | duration | timing-function | delay
+ transition: font-size 2s ease-in-out 0.2s;
+ CSS Transform
+ Used to apply 2D & 3D transformations to an element
+ rotate
+ transform: rotate(45deg);
+ CSS Transform
+ scale
+ transform: scale(2);
+ transform: scale(0.5);
+ transform: scale(1, 2);
+ transform: scaleX(0.5);
+ transform: scaleY(0.5);
+ CSS Transform
+ skew
+ transform: skew (30deg);
+ Animation
+ To animate CSS elements
+ @keyframe myName {
+ from { font-size : 20px; }
+ to { font-size : 40px; }
+ }
+ Animation Properties
+ animation-name
+ animation-duration
+ animation-timing-function 
+animation-delay
+ animation-iteration-count
+ animation-direction
+ Animation Shorthand
+ animation : myName 2s linear 3s infinite normal
+ % in Animation
+ @keyframe myName {
+ 0% { font-size : 20px; }
+ 50% { font-size : 30px; }
+ 100% { font-size : 40px; }
+ }
+ control+k then k
+-->
