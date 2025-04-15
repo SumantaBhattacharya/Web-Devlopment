@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url('path/to/gilroy.woff') format('woff');
+    /* Add additional formats if necessary */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy', sans-serif; /* Fallback to a generic sans-serif font */
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #D0D4D5;
+    position: relative;
+}
+
+.nav{
+    height: 100px;
+    padding: 0 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .nav-prt1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .nav-prt1 h4{
+    margin-right: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav .nav-prt2{
+    margin-left: 245px;
+    display: flex;
+}
+
+.nav .nav-prt2 .menu-icon {
+    font-weight: 999;
+    /* Add any other styling you want for the menu icon here */
+}
+
+.nav .nav-prt2 i{
+    margin-right: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav img {
+    height: 70px; /* Adjust the height as needed */
+    margin-right: 170px;
+    background-color: transparent;
+    display: block;
+}
+
+.content{
+    width:100%;
+    height: calc(100% - 100px);
+    position: relative;
+    display: flex;
+}
+
+.left{
+    width: 40%;
+    height: 100%;
+    padding: 110px 80px;
+}
+
+.left h5{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #535353;
+    margin-bottom: 30px;
+}
+.left h1{
+    font-size: 55px;
+    text-transform: uppercase;
+    line-height: 59px;
+    margin-bottom: 50px;
+}
+.left p{
+    font-size: 17px;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.left button{
+    background-color: #000;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 600;
+    border-top-left-radius: 0px;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    padding: 110px 5px;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* .right::-webkit-scrollbar{
+    display: none;
+} */
+
+.right .elem{
+    display: inline-block;
+    height: 420px;
+    margin-right: 20px;
+    width: 350px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
+}
+
+.right .elem img {
+    margin-top: 50px;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 40px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.elem h4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 17px 34px;
+    background-color: #D0D4D5; /* Optional: add background color for better visibility */
+    border-radius: 6px;
+    border-top-right-radius: 0%;
+    cursor: pointer;
+}
+
+.elem h5 {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    margin: 0;
+    padding: 17px 34px;
+    background-color: #000000; /* Optional: add background color for better visibility */
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 10.7px;
+    border-bottom-right-radius: 0%;
+    cursor: pointer;
+}
+
+
+
+
