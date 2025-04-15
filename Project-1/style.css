@@ -1,0 +1,137 @@
+
+.main {
+    height: 100%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    
+}
+.nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Change from space-between to flex-start */
+    padding: 0px 40px;/*top,bottom,right,left*/
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+}
+.main .nav .nav-part1{
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    /* gap: 5px; */
+}
+.main .nav .nav-part2{
+    font-size: 19px;
+    font-weight: 100;
+}
+.nav h3{
+    font-size: 17px;
+    border: 1.5px solid black;
+    font-weight: 500;
+    padding: 5px 10px;/*inside menu*/
+    border-radius: 50px;
+}
+.nav i{
+    font-size: 16px;
+    border: 1.5px solid black;
+    font-weight: 500;
+    padding: 5px 8px;/*inside menu*/
+    border-radius: 50px;
+}
+.nav .nav-part2 a{
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.nav button {
+    padding: 5px 10px; /* Adjust the padding */
+    border-radius: 50px;
+    border: 1.5px solid black; /* Adjust the border */
+    font-size: 17px; /* Adjust the font size */
+    font-weight: 500; /* Adjust the font weight */
+    background-color: transparent; /* Set the background color to transparent or any other color you prefer */
+}
+/* Add more specificity to the selector */
+.nav .nav-part3 .Sign-link button {
+    color: white;
+    background-color: orangered;
+    border: none;
+}
+h1 {
+    font-size: 145px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+}
+img{
+    height: 450px;
+    width: 370px;
+    object-position: top;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+}
+#img1{
+    transform: translate(-50%,-50%) rotate(30deg);
+}
+#img2{
+    transform: translate(-50%,-50%) rotate(20deg);
+}
+#img3{
+    transform: translate(-50%,-50%) rotate(10deg);
+}
+.btm-left{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 17px;
+
+}
+
+.icons {
+    display: flex;
+    margin-top: 550px;
+    margin-right: 50px;
+}
+
+.icons ul {
+    flex: 1;
+    text-align: right;
+    /* list-style: none; */
+}
+
+.icons ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    padding: 2px;
+}
+
+.icons ul li i {
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+
+.icons ul li i:hover {
+    color: orangered;
+}
