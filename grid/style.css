@@ -1,0 +1,149 @@
+/* css grid
+Setting a container's display to grid will make all children grid items
+container{
+    diplay: grid;
+
+}
+
+[ [] []grid items ]
+[ []              ]grid container
+
+2d format
+
+grid model
+  L1        L2           L3 GRID TRACK  L4 
+Li+-----------+-------------+-----------+
+  | GRID CELL | GRID CELL | GRID CELL |
+L2+-----------+-----------+-----------+ROW-HORIZONTAL
+  | GRID CELL | GRID CELL | GRID CELL | GRID TRACK
+L3+-----------+-----------+-----------+
+  | GRID CELL | GRID CELL | GRID CELL |
+L4+-----------+-----------+-----------+
+   COLUMN-VERTICAL
+
+THE DISTANCE BETWEEN LINES IS THE GRID TRACK
+
+GRID TEMPLATE
+THEY DEFINE THE LINES AND TRACK SIZING
+grid-template-rows: 100px 100px 100px
+L1----------------------------------
+TRACK
+L2----------------------------------
+TRACK
+L3----------------------------------
+TRACK
+L4----------------------------------
+grid-template-columns: 100px 100px 100px
+  L1 L2 L3 L4
+  +       +        +       +
+  | TRACK | TRACK  | TRACK |
+  |       |        |       |
+  |       |        |       |
+  +       +        +       +
+
+  no of tracks always less than 1 lines
+  ex 3 tracks means 4 lines 
+
+  TRACK SIZING we USE
+  grid-template-rows
+  grid-template-columns
+
+  2d in tabular format
+
+  Grid Template
+  Repeat is used to devide all available space
+  grid-template-rows: repeat(count, 1fr) fr-fraction of 100% width or 100% available space
+  grid-template-columns: repeat(count, 1fr)
+  grid-template-rows: repeat(2,1fr)
+  grid-template-columns: 1fr 1fr
+
+  better than auto is repeat
+  2d is basically rows and columns
+
+  Grid gaps
+  they deifne the gams between lines
+  row-gap
+  column-gap
+  grid-gap:rowGap columnGap
+
+  Grid Columns
+  Defines an item's starting and ending position inside the column
+  grid-column-start:line_number
+  grid-column-end:line_number
+  grid-column:start_col/end_cool
+  grid-column:start_col/span number
+  
++---+---+---+---+
+| A     | C | D |
++---+---+---+---+
+| E | F | G | H |
++---+---+---+---+
+| I | J | K | L |
++---+---+---+---+
+
+Grid row
+Defines an items starting and ending position inside the row
+grid-row-start: line_number
+grid-row-end: line_number
+grid-row: grid-row-start grid-row-end
+grid-row: grid-row-start span number
+
+L1  +---+---+---+---+
+    | A | B | C | D |
+L2  +   +---+---+---+
+|   | F | G | H | L |
+L3  +---+---+---+---+
+    | I | J | K | L |
+L4  +---+---+---+---+
+
+Horizontal
+justify-items(container)
+justify-self(item)     
+
+Vertical 
+align-items(conatiner)
+align-self(item)
+
+*/
+
+.container {
+  width: 600px;
+  height: 300px;
+  background-color: rgb(82, 194, 194);
+  display: inline-grid;
+  /* grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px; */
+  grid-template-rows: repeat(5,1fr); /*or grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  /* grid-gap:rowGap columnGap */
+  justify-items: center;
+  align-items: center;/* place-items: center; */
+}
+
+.item {
+  width: 100px;
+    height: 50px;height: auto;
+  text-align: center;
+  background-color: bisque;
+  border: 2px solid black;
+}
+
+.one{
+    /* grid-column-start: 1; */
+    grid-column-start: 1;
+    grid-column-end: span 2; /* The item spans 2 column tracks */
+    /* grid-column-start: 1 / span2; */
+    /* grid-column-end: 3;grid-column: 1/3; */
+    align-self: end; /* Aligns the item to the end vertically */
+    /* place-self: ; */
+}
+
+.TWO{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* grid-row: 1/3; */
+    /* grid-row: 1 / span3; */
+    
+}
