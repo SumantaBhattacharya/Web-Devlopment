@@ -1,0 +1,63 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/html-color-codes-color-tutorials-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100px;
+}
+.search-box{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #470e0e;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    /* margin: 20px 1000px; */
+}
+.search-box:hover .search-txt{
+    width:220px;
+    padding: 0 6px;
+
+}
+.search-box:hover .search-btn{
+    background: #fff;
+    border: 2px solid #000;
+}
+.search-btn{
+    text-decoration: none;
+    background: #000;
+    color: orangered;
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 39px;
+    border-radius: 50px;
+}
+.search-txt{/*writting section*/
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    float: left;
+    font: 16px;
+    transition: 0.3s ease;
+    line-height: 40px;
+    width: 0px;
+}
+
+/*translate(-50%, -50%): This transformation moves the element horizontally and vertically. The first value, -50%, represents the horizontal movement, and the second value, also -50%, represents the vertical movement.
+When used with the transform property, the percentage values are calculated based on the dimensions of the element itself. Specifically:
+
+-50% for horizontal movement means the element is moved to the left by half of its own width.
+-50% for vertical movement means the element is moved upward by half of its own height.
+the float: right; property is applied to the .search-btn class. The float property in CSS is used to specify whether an element should be floated to the left, right, or not at all.
+In this case, float: right; is used to make the .search-btn element float to the right within its containing element.
+
+ if you apply line-height: 40px; to an element, the height of each line of text within that element will be 40 pixels. This can affect the overall spacing and appearance of text within the element.*/
